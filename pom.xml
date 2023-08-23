@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.testingchief</groupId>
+  <artifactId>selenium-framework</artifactId>
+  <version>1.0.0</version>
+
+  <properties>
+    <maven.compiler.source>17</maven.compiler.source>
+    <maven.compiler.target>17</maven.compiler.target>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <packaging>pom</packaging>
+
+  <modules>
+    <module>selenium-cucumber</module>
+    <module>selenium-quantum</module>
+    <module>selenium-selenide</module>
+    <module>selenium3-junit</module>
+    <module>selenium3-testng</module>
+    <module>selenium4-junit</module>
+    <module>selenium4-testng</module>
+  </modules>
+  
+</project>
