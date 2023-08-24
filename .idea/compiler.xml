@@ -14,8 +14,9 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="selenium-frameworks" target="11" />
-      <module name="selenium4-junit" target="11" />
+      <module name="selenium-cucumber (1)" target="17" />
+      <module name="selenium-cucumber (2)" target="17" />
+      <module name="selenium4-junit" target="17" />
     </bytecodeTargetLevel>
   </component>
 </project>

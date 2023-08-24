@@ -3,9 +3,8 @@ package org.testingchief.stepdefinitions;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testingchief.utilities.DriverFactory;
 
 public class Parabank {
@@ -36,4 +35,33 @@ public class Parabank {
         System.out.println(DriverFactory.getDriver().getTitle());
     }
 
+    @When("user navigates to the admin page")
+    public void user_navigates_to_the_admin_page() {
+        DriverFactory.getDriver().findElement(By.linkText("Admin Page")).click();
+    }
+
+    @When("user clicks on initialize")
+    public void user_clicks_on_initialize() {
+        DriverFactory.getDriver().findElement(By.name("action")).click();
+    }
+    @Then("the database initialized successfully")
+    public void the_database_initialized_successfully() {
+        Assert.assertEquals("Database initialized successfully!",
+                DriverFactory.getDriver().findElement(By.cssSelector("p:nth-child(2) > b")).getText(),
+                "Database Initialized"
+        );
+    }
+
+    @When("user clicks on clean button")
+    public void user_clicks_on_clean_button() {
+        DriverFactory.getDriver().findElement(By.cssSelector("button[value='CLEAN']")).click();
+    }
+
+    @Then("the database is cleaned successfully")
+    public void the_database_is_cleaned_successfully() {
+        Assert.assertEquals("Database cleaned successfully!",
+                DriverFactory.getDriver().findElement(By.cssSelector("p:nth-child(2) > b")).getText(),
+                "Database Cleaned"
+        );
+    }
 }

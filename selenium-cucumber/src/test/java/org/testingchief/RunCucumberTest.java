@@ -2,32 +2,34 @@ package org.testingchief;
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
-import io.cucumber.testng.AbstractTestNGCucumberTests;
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
 import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
 import org.openqa.selenium.By;
 import org.testingchief.utilities.DriverFactory;
-import org.testng.annotations.*;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features = {"src/test/resources/features/"},
         glue = {"org.testingchief"},
         plugin = {"pretty", "junit:reports/cucumber.xml", "junit:reports/cucumber.json"})
 
-public class RunCucumberTest extends AbstractTestNGCucumberTests {
+public class RunCucumberTest {
 
-    @Parameters({"env", "browser"})
     @BeforeClass
-    public void startBrowser(String env, String browser){
+    public static void startBrowser() {
         DriverFactory.setDriver("Chrome");
     }
 
-    @AfterTest
-    public void logOut(){
+    @After
+    public static void logOut() {
         DriverFactory.getDriver().findElement(By.xpath("//a[normalize-space()='Log Out']")).click();
     }
 
     @AfterClass
-    public void tearDown(){
+    public static void tearDown() {
         DriverFactory.quitDriver();
     }
 }

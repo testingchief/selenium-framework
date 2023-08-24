@@ -4,105 +4,63 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a91a4ab3-7990-4131-9fee-0418d327712e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/selenium-cucumber/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/selenium-cucumber/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/selenium-cucumber/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/selenium-cucumber/src/main/java/org/testingchief/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/selenium-cucumber/src/test/java/org/testingchief/RunCucumberTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/selenium-cucumber/src/test/java/org/testingchief/stepdefinitions/Parabank.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/selenium-cucumber/src/test/java/org/testingchief/utilities/DriverFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/selenium-cucumber/src/test/resources/cucumber.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/selenium-cucumber/src/test/resources/features/parabank/accounts.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/selenium-cucumber/src/test/resources/features/parabank/customers.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/selenium-cucumber/src/test/resources/features/parabank/login.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/selenium-cucumber/src/test/resources/features/parabank/positions.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/selenium-cucumber/src/test/resources/features/parabank/setup.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/selenium-cucumber/src/test/resources/features/parabank/transactions.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/selenium-quantum/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/selenium-quantum/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/selenium-quantum/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/selenium-quantum/src/main/java/org/testingchief/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/selenium-selenide/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/selenium-selenide/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/selenium-selenide/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/selenium-selenide/src/main/java/org/testingchief/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/selenium3-junit/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/selenium3-junit/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/selenium3-junit/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/selenium3-junit/src/main/java/org/testingchief/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/selenium4-testng/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/selenium4-testng/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/selenium4-testng/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/selenium4-testng/src/main/java/org/testingchief/Main.java" afterDir="false" />
+    <list default="true" id="7bc78d15-85e2-4141-9f56-f43736e467f9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selenium-cucumber/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/selenium-cucumber/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selenium-cucumber/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/selenium-cucumber/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selenium-cucumber/reports/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/selenium-cucumber/reports/cucumber.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selenium-cucumber/reports/cucumber.xml" beforeDir="false" afterPath="$PROJECT_DIR$/selenium-cucumber/reports/cucumber.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selenium-cucumber/src/test/java/org/testingchief/RunCucumberTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/selenium-cucumber/src/test/java/org/testingchief/RunCucumberTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selenium-cucumber/src/test/java/org/testingchief/stepdefinitions/Parabank.java" beforeDir="false" afterPath="$PROJECT_DIR$/selenium-cucumber/src/test/java/org/testingchief/stepdefinitions/Parabank.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selenium-cucumber/src/test/resources/features/parabank/accounts.feature" beforeDir="false" afterPath="$PROJECT_DIR$/selenium-cucumber/src/test/resources/features/parabank/accounts.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selenium-cucumber/src/test/resources/features/parabank/setup.feature" beforeDir="false" afterPath="$PROJECT_DIR$/selenium-cucumber/src/test/resources/features/parabank/setup.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
     </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="workspaceImportEnabled" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
-  <component name="ProjectId" id="2UOp4bBWfUHpvUsiB9sigmuLSox" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: -1
+}</component>
+  <component name="ProjectId" id="2UPUouj8MDEsCXjr5EXAnG11gUz" />
   <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "D:/Code/java-workspace/selenium-framework/selenium-cucumber/src/test/java/org/testingchief/parabank/stepDefs"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;selenium-cucumber&quot;
   }
-}]]></component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Code\java-workspace\selenium-frameworks\selenium-selenide" />
-      <recent name="D:\Code\java-workspace\selenium-frameworks\selenium-quantum" />
-      <recent name="D:\Code\java-workspace\selenium-frameworks\selenium-cucumber" />
-      <recent name="D:\Code\java-workspace\selenium-frameworks\selenium4-testng" />
-      <recent name="D:\Code\java-workspace\selenium-frameworks\selenium3-junit" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="org.testingchief" />
-    </key>
-  </component>
+}</component>
   <component name="RunManager" selected="JUnit.RunCucumberTest">
-    <configuration name="Feature: accounts" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: setup" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/selenium-cucumber/src/test/resources/features/parabank/accounts.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/selenium-cucumber/src/test/resources/features/parabank/setup.feature" />
+      <option name="GLUE" value="org.testingchief.stepdefinitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="selenium-cucumber" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: accounts" />
+      <option name="SUGGESTED_NAME" value="Feature: setup" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -110,21 +68,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MainTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="selenium-cucumber" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.testingchief.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.testingchief" />
-      <option name="MAIN_CLASS_NAME" value="org.testingchief.MainTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -147,20 +90,60 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.RunCucumberTest" />
-        <item itemvalue="Cucumber Java.Feature: accounts" />
-        <item itemvalue="JUnit.MainTest" />
+        <item itemvalue="Cucumber Java.Feature: setup" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a91a4ab3-7990-4131-9fee-0418d327712e" name="Changes" comment="" />
-      <created>1692820292554</created>
+      <changelist id="7bc78d15-85e2-4141-9f56-f43736e467f9" name="Changes" comment="" />
+      <created>1692840893112</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1692820292554</updated>
+      <updated>1692840893112</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/selenium-cucumber/src/test/java/org/testingchief/RunCucumberTest.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/selenium-cucumber/src/test/java/org/testingchief/RunCucumberTest.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/selenium-cucumber/src/test/java/org/testingchief/RunCucumberTest.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/selenium-cucumber/src/test/java/org/testingchief/stepdefinitions/Parabank.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/selenium-cucumber/src/test/java/org/testingchief/stepdefinitions/Parabank.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/selenium-cucumber/src/test/java/org/testingchief/stepdefinitions/Parabank.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/selenium-cucumber/src/test/java/org/testingchief/stepdefinitions/Parabank.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
