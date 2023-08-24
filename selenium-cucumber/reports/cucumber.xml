@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="41.891" tests="11" skipped="0" failures="0" errors="0">
-<testcase classname="Parabank Customer Accounts" name="Get Customer Accounts" time="13.622">
+<testsuite name="Cucumber" time="21.497" tests="11" skipped="0" failures="0" errors="0">
+<testcase classname="Parabank Customer Accounts" name="Get Customer Accounts" time="7.485">
 <system-out><![CDATA[
 Given user opens the Parabank web login page................................passed
 When user enters the username...............................................passed
@@ -25,7 +25,7 @@ Then the accounts overview page is displayed................................pass
 </testcase>
 <testcase classname="Parabank Customer Accounts" name="Create a New Account" time="0">
 </testcase>
-<testcase classname="Setup Parabank" name="Clean the Database" time="12.372">
+<testcase classname="Setup Parabank" name="Clean the Database" time="6.183">
 <system-out><![CDATA[
 Given user opens the Parabank web login page................................passed
 When user navigates to the admin page.......................................passed
@@ -33,7 +33,7 @@ And user clicks on clean button.............................................pass
 Then the database is cleaned successfully...................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Setup Parabank" name="Initialize the Database" time="15.484">
+<testcase classname="Setup Parabank" name="Initialize the Database" time="6.132">
 <system-out><![CDATA[
 Given user opens the Parabank web login page................................passed
 When user navigates to the admin page.......................................passed
