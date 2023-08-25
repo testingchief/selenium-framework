@@ -14,45 +14,40 @@ import java.util.List;
 
 @QAFTestStepProvider
 public class GoogleStepDefs extends QuantumCourseUtils {
-	@Given("^I am on Google Search Page$")
-	public void I_am_on_Google_Search_Page() throws Throwable {
-		new WebDriverTestBase().getDriver().get("http://www.google.com/");
-	}
-	@When("^I search for \"([^\"]*)\"$")
-	public void I_search_for(String searchKey) throws Throwable {
-		QAFExtendedWebElement searchBoxElement = new QAFExtendedWebElement(By.name("q"));
-		QAFExtendedWebElement searchBtnElement = new QAFExtendedWebElement(By.name("btnK"));
+    @Given("^I am on Google Search Page$")
+    public void I_am_on_Google_Search_Page() throws Throwable {
+        new WebDriverTestBase().getDriver().get("http://www.google.com/");
+    }
 
-		searchBoxElement.clear();
-		searchBoxElement.sendKeys(searchKey);
+    @When("^I search for \"([^\"]*)\"$")
+    public void I_search_for(String searchKey) throws Throwable {
+        QAFExtendedWebElement searchBoxElement = new QAFExtendedWebElement("search.text.box"); //using resources/common/search.loc
+        QAFExtendedWebElement searchBtnElement = new QAFExtendedWebElement(By.name("btnK"));
+
+        searchBoxElement.clear();
+        searchBoxElement.sendKeys(searchKey);
         //Web & mobile are sometimes slightly different. In this case, in mobile we need to click the go button and in Desktop there is no button snd we
         // need to press the Enter key. To implement this, we created an isMobile method which uses the deviceType capability and with it we can branch our code
-        if(isMobile()){
+        if (isMobile()) {
             searchBtnElement.click();
-
-        }else {
+        } else {
             searchBoxElement.sendKeys(Keys.ENTER);
         }
+    }
 
+    @Then("^it should have \"([^\"]*)\" in search results$")
+    public void it_should_have_in_search_results(String result) throws Throwable {
+        QAFExtendedWebElement searchResultElement =
+                new QAFExtendedWebElement("partialLink=" + result);
+        searchResultElement.verifyPresent(result);
+    }
 
-
-	}
-	@Then("^it should have \"([^\"]*)\" in search results$")
-	public void it_should_have_in_search_results(String result) throws Throwable {
-		QAFExtendedWebElement searchResultElement =
-				new QAFExtendedWebElement("partialLink=" + result);
-		searchResultElement.verifyPresent(result);
-	}
-
-	@Then("^it should have following search results:$")
-	public void it_should_have_all_in_search_results(List<String> results) {
-		QAFExtendedWebElement searchResultElement;
-		for (String result : results) {
-			searchResultElement = new QAFExtendedWebElement("partialLink=" + result);
-			searchResultElement.verifyPresent(result);
-		}
-	}
-	
-	
-
+    @Then("^it should have following search results:$")
+    public void it_should_have_all_in_search_results(List<String> results) {
+        QAFExtendedWebElement searchResultElement;
+        for (String result : results) {
+            searchResultElement = new QAFExtendedWebElement("partialLink=" + result);
+            searchResultElement.verifyPresent(result);
+        }
+    }
 }
