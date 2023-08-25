@@ -10,18 +10,6 @@
         <groups>
             <run>
                 <include name="@setup"/>
-            </run>
-        </groups>
-        <classes>
-            <class
-                    name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory"/>
-        </classes>
-    </test>
-    <test name="Accounts" enabled="true">
-        <!--<parameter name="driver.capabilities.model" value="Galaxy.*"></parameter>-->
-        <parameter name="perfecto.capabilities.deviceType" value="Desktop"/>
-        <groups>
-            <run>
                 <include name="@accounts"/>
             </run>
         </groups>
