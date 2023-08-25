@@ -1,2 +1,3 @@
 /target/
-/reports/
+reports/cucumber.json
+reports/cucumber.xml
