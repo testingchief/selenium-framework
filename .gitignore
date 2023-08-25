@@ -25,8 +25,9 @@ replay_pid*
 
 # ide
 /.vscode/
-/.idea/
-/reports/
-reports/*
-cucumber.json
-cucumber.xml
+/.idea/*
+**/reports/*
+**/drivers/*
+.idea/jarRepositories.xml
+.idea/workspace.xml
+drivers/chromedriver.exe
