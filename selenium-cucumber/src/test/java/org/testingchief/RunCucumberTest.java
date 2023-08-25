@@ -4,12 +4,10 @@ import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.After;
 import org.junit.AfterClass;
-import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.runner.RunWith;
-import org.junit.runners.Parameterized;
 import org.openqa.selenium.By;
-import org.testingchief.utilities.DriverFactory;
+import org.testingchief.utils.DriverFactory;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features = {"src/test/resources/features/"},
@@ -24,7 +22,7 @@ public class RunCucumberTest {
     }
 
     @After
-    public static void logOut() {
+    public void logOut() {
         DriverFactory.getDriver().findElement(By.xpath("//a[normalize-space()='Log Out']")).click();
     }
 
