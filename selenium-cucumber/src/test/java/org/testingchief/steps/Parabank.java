@@ -1,11 +1,11 @@
-package org.testingchief.stepdefinitions;
+package org.testingchief.steps;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.By;
-import org.testingchief.utilities.DriverFactory;
+import org.testingchief.utils.DriverFactory;
 
 public class Parabank {
 
