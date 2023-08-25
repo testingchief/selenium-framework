@@ -28,3 +28,5 @@ replay_pid*
 /.idea/
 /reports/
 reports/*
+cucumber.json
+cucumber.xml
