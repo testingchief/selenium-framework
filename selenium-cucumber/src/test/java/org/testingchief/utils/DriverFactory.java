@@ -1,6 +1,5 @@
-package org.testingchief.utilities;
+package org.testingchief.utils;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -14,13 +13,13 @@ public class DriverFactory {
     }
 
     public static void setDriver(String browserName) {
-        WebDriverManager.chromedriver().setup();
+//        WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--start-maximized");
         options.addArguments("--no-sandbox");
         options.addArguments("--disable-dev-shm-usage");
 
-        driver = new ChromeDriver();
+        driver = new ChromeDriver(options);
     }
 
     public static WebDriver getDriver() {
@@ -28,6 +27,7 @@ public class DriverFactory {
     }
 
     public static void quitDriver() {
+        System.out.println("In quitDriver");
         driver.close();
         driver.quit();
     }
