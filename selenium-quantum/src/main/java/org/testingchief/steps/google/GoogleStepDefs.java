@@ -1,4 +1,4 @@
-package org.testingchief.steps;
+package org.testingchief.steps.google;
 
 import com.qmetry.qaf.automation.step.QAFTestStepProvider;
 import com.qmetry.qaf.automation.ui.WebDriverTestBase;
