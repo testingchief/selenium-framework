@@ -6,6 +6,7 @@ import com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebElement;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.testingchief.utils.QuantumCourseUtils;
@@ -16,6 +17,7 @@ import java.util.List;
 public class GoogleStepDefs extends QuantumCourseUtils {
     @Given("^I am on Google Search Page$")
     public void I_am_on_Google_Search_Page() throws Throwable {
+        WebDriverManager.chromedriver().cachePath("drivers").avoidOutputTree().setup();
         new WebDriverTestBase().getDriver().get("http://www.google.com/");
     }
 
