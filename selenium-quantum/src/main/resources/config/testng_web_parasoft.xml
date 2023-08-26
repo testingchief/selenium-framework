@@ -4,7 +4,7 @@
         <listener class-name="com.quantum.listeners.QuantumReportiumListener"/>
     </listeners>
 
-    <test name="Setup" enabled="true">
+    <test name="Parabank" enabled="true">
         <!--<parameter name="driver.capabilities.model" value="Galaxy.*"></parameter>-->
         <parameter name="perfecto.capabilities.deviceType" value="Desktop"/>
         <groups>
