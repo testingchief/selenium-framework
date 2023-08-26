@@ -7,7 +7,9 @@ import com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebElement;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 
 import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.CoreMatchers.equalTo;
@@ -19,6 +21,7 @@ public class ParabankStepDefs {
     //user login
     @Given("user opens the Parabank web login page")
     public void user_opens_the_parabank_web_login_page() {
+        WebDriverManager.chromedriver().cachePath("drivers").avoidOutputTree().setup();
         new WebDriverTestBase().getDriver().get("http://192.168.0.182:8080/parabank/index.htm");
     }
 
