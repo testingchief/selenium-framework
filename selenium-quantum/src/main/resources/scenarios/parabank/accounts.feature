@@ -1,13 +1,15 @@
 @parabank @accounts
 Feature: Parabank Customer Accounts
 
-  @findAccounts
-  Scenario: Get Customer Accounts
+  Background:
     Given user opens the Parabank web login page
     When user enters the username
     And user enters the password
     And user clicks on login
-    Then the accounts overview page is displayed
+    Then the user is logged in successfully
+
+  @findAccounts
+  Scenario: Get Customer Accounts
 
   @getAccountById
   Scenario: Get Account By Id
@@ -39,4 +41,20 @@ Feature: Parabank Customer Accounts
 
   @createAccount
   Scenario: Create a New Account
-    Given user opens the Parabank web login page
+    Given user logs out of the application
+    When the user clicks on register link
+    And enter the required customer information
+      | field                        | value |
+      | customer.firstName           | ""    |
+      | customer.lastName            | ""    |
+      | customer.address.street      | ""    |
+      | customer.address.city        | ""    |
+      | customer.address.state       | ""    |
+      | customer.address.zipCode     | ""    |
+      | customer.address.phoneNumber | ""    |
+      | customer.ssn                 | ""    |
+      | customer.username            | ""    |
+      | customer.password            | ""    |
+      | repeatedPassword             | ""    |
+    And user clicks on register button
+    Then the user is created successfully
