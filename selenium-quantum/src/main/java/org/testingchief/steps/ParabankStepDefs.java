@@ -9,7 +9,6 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 
 import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.CoreMatchers.equalTo;
@@ -46,6 +45,18 @@ public class ParabankStepDefs {
     @Then("the accounts overview page is displayed")
     public void the_accounts_overview_page_is_displayed() {
         assertThat(new WebDriverTestBase().getDriver().getTitle(), containsString("Accounts Overview"));
+    }
+
+    @Then("^the user is logged in successfully$")
+    public void the_user_is_logged_in_successfully() {
+        QAFExtendedWebElement usernameText = new QAFExtendedWebElement("className=smallText");
+        assertThat(usernameText.getText(), equalTo("Welcome John Smith"));
+    }
+
+    @Then("^user logs out of the application$")
+    public void user_logs_out_of_the_application() {
+        QAFExtendedWebElement logoutButton = new QAFExtendedWebElement("linkText=Log Out");
+        logoutButton.click();
     }
 
     //admin features
