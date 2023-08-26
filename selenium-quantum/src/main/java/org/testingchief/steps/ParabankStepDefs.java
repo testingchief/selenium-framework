@@ -8,7 +8,6 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.openqa.selenium.By;
-import org.openqa.selenium.chrome.ChromeOptions;
 
 import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.CoreMatchers.equalTo;
@@ -20,10 +19,6 @@ public class ParabankStepDefs {
     //user login
     @Given("user opens the Parabank web login page")
     public void user_opens_the_parabank_web_login_page() {
-//        System.setProperty("phantomjs.binary.path", "drivers/bin");
-        ChromeOptions chromeOptions = new ChromeOptions();
-        chromeOptions.addArguments("--headless=new", "--disable-gpu", "--ignore-certificate-errors", "--disable-extensions", "--no-sandbox", "--disable-dev-shm-usage");
-        new WebDriverTestBase().getDriver().beforeInitialize(chromeOptions);
         new WebDriverTestBase().getDriver().get("http://192.168.0.182:8080/parabank/index.htm");
     }
 
