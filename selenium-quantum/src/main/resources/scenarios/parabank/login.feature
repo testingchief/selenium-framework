@@ -7,6 +7,6 @@ Feature: Login to Parabank
     When user enters the username
     And user enters the password
     And user clicks on login
-    Then the accounts overview page is displayed
-    And the user is logged in successfully
+    Then the user is logged in successfully
+    And the accounts overview page is displayed
     Then user logs out of the application

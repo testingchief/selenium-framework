@@ -1,4 +1,4 @@
-package org.testingchief.steps;
+package org.testingchief.steps.parabank;
 
 
 import com.qmetry.qaf.automation.step.QAFTestStepProvider;
@@ -15,7 +15,7 @@ import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 @QAFTestStepProvider
-public class ParabankStepDefs {
+public class LoginStepDefs {
 
     //user login
     @Given("user opens the Parabank web login page")
@@ -59,36 +59,4 @@ public class ParabankStepDefs {
         logoutButton.click();
     }
 
-    //admin features
-    @When("user navigates to the admin page")
-    public void user_navigates_to_the_admin_page() {
-        QAFExtendedWebElement adminPageLink = new QAFExtendedWebElement("linkText=" + "Admin Page");
-        adminPageLink.click();
-    }
-
-    @When("user clicks on initialize")
-    public void user_clicks_on_initialize() {
-        QAFExtendedWebElement initializeButton = new QAFExtendedWebElement("name=" + "action");
-        initializeButton.click();
-    }
-
-    @Then("the database initialized successfully")
-    public void the_database_initialized_successfully() {
-        assertThat(new QAFExtendedWebElement(By.cssSelector("p:nth-child(2) > b")).getText(),
-                equalTo("Database Initialized")
-        );
-    }
-
-    @When("user clicks on clean button")
-    public void user_clicks_on_clean_button() {
-        QAFExtendedWebElement cleanButton = new QAFExtendedWebElement(By.cssSelector("button[value='CLEAN']"));
-        cleanButton.click();
-    }
-
-    @Then("the database is cleaned successfully")
-    public void the_database_is_cleaned_successfully() {
-        assertThat(new QAFExtendedWebElement(By.cssSelector("p:nth-child(2) > b")).getText(),
-                equalTo("Database Cleaned")
-        );
-    }
 }
