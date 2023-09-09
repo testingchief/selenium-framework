@@ -4,7 +4,7 @@
         <listener class-name="com.quantum.listeners.QuantumReportiumListener"/>
     </listeners>
 
-    <test name="Setup" enabled="true">
+    <test name="Setup" enabled="false">
         <!--<parameter name="driver.capabilities.model" value="Galaxy.*"></parameter>-->
         <parameter name="perfecto.capabilities.deviceType" value="Desktop"/>
         <groups>
@@ -17,7 +17,7 @@
                     name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory"/>
         </classes>
     </test>
-    <test name="Login" enabled="true">
+    <test name="Login" enabled="false">
         <parameter name="perfecto.capabilities.deviceType" value="Desktop"/>
         <groups>
             <run>
@@ -29,7 +29,7 @@
                     name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory"/>
         </classes>
     </test>
-    <test name="Accounts" enabled="false">
+    <test name="Accounts" enabled="true">
         <parameter name="perfecto.capabilities.deviceType" value="Desktop"/>
         <groups>
             <run>
