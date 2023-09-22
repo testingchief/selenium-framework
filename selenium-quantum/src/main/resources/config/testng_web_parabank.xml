@@ -5,7 +5,6 @@
     </listeners>
 
     <test name="Setup" enabled="false">
-        <!--<parameter name="driver.capabilities.model" value="Galaxy.*"></parameter>-->
         <parameter name="perfecto.capabilities.deviceType" value="Desktop"/>
         <groups>
             <run>
@@ -17,7 +16,7 @@
                     name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory"/>
         </classes>
     </test>
-    <test name="Login" enabled="false">
+    <test name="Login" enabled="true">
         <parameter name="perfecto.capabilities.deviceType" value="Desktop"/>
         <groups>
             <run>
@@ -29,7 +28,7 @@
                     name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory"/>
         </classes>
     </test>
-    <test name="Accounts" enabled="true">
+    <test name="Accounts" enabled="false">
         <parameter name="perfecto.capabilities.deviceType" value="Desktop"/>
         <groups>
             <run>
