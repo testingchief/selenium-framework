@@ -4,7 +4,7 @@
         <listener class-name="com.quantum.listeners.QuantumReportiumListener"/>
     </listeners>
 
-    <test name="Setup" enabled="false">
+    <test name="Setup" enabled="true">
         <parameter name="perfecto.capabilities.deviceType" value="Desktop"/>
         <groups>
             <run>
@@ -28,7 +28,7 @@
                     name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory"/>
         </classes>
     </test>
-    <test name="Accounts" enabled="false">
+    <test name="Accounts" enabled="true">
         <parameter name="perfecto.capabilities.deviceType" value="Desktop"/>
         <groups>
             <run>
@@ -40,7 +40,7 @@
                     name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory"/>
         </classes>
     </test>
-    <test name="Customers" enabled="false">
+    <test name="Customers" enabled="true">
         <parameter name="perfecto.capabilities.deviceType" value="Desktop"/>
         <groups>
             <run>
@@ -52,19 +52,7 @@
                     name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory"/>
         </classes>
     </test>
-    <test name="Positions" enabled="false">
-        <parameter name="perfecto.capabilities.deviceType" value="Desktop"/>
-        <groups>
-            <run>
-                <include name="@positions"/>
-            </run>
-        </groups>
-        <classes>
-            <class
-                    name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory"/>
-        </classes>
-    </test>
-    <test name="Transactions" enabled="false">
+    <test name="Transactions" enabled="true">
         <parameter name="perfecto.capabilities.deviceType" value="Desktop"/>
         <groups>
             <run>
