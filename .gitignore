@@ -26,6 +26,7 @@ replay_pid*
 # ide
 /.vscode/
 /.idea/*
+.idea/*.xml
 **/reports/*
 **/drivers/*
 .idea/jarRepositories.xml
