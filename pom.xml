@@ -24,15 +24,7 @@
         <selenium.version>[4.10.0,)</selenium.version>
     </properties>
 
-    <dependencies>
-        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java-->
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-java</artifactId>
-            <version>${selenium.version}</version>
-        </dependency>
-
-    </dependencies>
+    <dependencies />
 
     <build>
         <plugins>
