@@ -7,7 +7,7 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.testingchief.utils.DriverFactory;
 
-public class Parabank {
+public class Login {
 
     @Given("user opens the Parabank web login page")
     public void user_opens_the_parabank_web_login_page() {

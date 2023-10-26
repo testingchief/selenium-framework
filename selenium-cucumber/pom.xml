@@ -15,8 +15,8 @@
     <properties>
         <selenium.version>LATEST</selenium.version>
         <junit.version>4.13.2</junit.version>
-        <testng.version>7.8.0</testng.version>
-        <cucumber.version>7.13.0</cucumber.version>
+<!--        <testng.version>LATEST</testng.version>-->
+        <cucumber.version>LATEST</cucumber.version>
     </properties>
 
     <dependencies>

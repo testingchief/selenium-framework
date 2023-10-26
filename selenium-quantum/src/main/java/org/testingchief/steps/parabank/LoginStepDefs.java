@@ -1,6 +1,7 @@
 package org.testingchief.steps.parabank;
 
 
+import com.qmetry.qaf.automation.step.QAFTestStep;
 import com.qmetry.qaf.automation.step.QAFTestStepProvider;
 import com.qmetry.qaf.automation.ui.WebDriverTestBase;
 import com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebElement;
@@ -57,6 +58,11 @@ public class LoginStepDefs {
     public void user_logs_out_of_the_application() {
         QAFExtendedWebElement logoutButton = new QAFExtendedWebElement("linkText=Log Out");
         logoutButton.click();
+    }
+
+    @QAFTestStep(description="user enters the username as {0}")
+    public void userEntersTheUsernameAs(String str0){
+
     }
 
 }

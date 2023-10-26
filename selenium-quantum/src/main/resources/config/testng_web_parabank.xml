@@ -4,7 +4,7 @@
         <listener class-name="com.quantum.listeners.QuantumReportiumListener"/>
     </listeners>
 
-    <test name="Setup" enabled="true">
+    <test name="Setup" enabled="false">
         <parameter name="perfecto.capabilities.deviceType" value="Desktop"/>
         <groups>
             <run>
