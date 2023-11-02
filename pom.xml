@@ -19,7 +19,6 @@
     <module>selenium-quantum</module>
     <module>selenium-selenide</module>
     <module>selenium3-junit</module>
-    <module>selenium3-testng</module>
     <module>selenium4-junit</module>
     <module>selenium4-testng</module>
   </modules>

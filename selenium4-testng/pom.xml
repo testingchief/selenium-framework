@@ -1,20 +1,41 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
 
-  <groupId>org.testingchief</groupId>
-  <artifactId>selenium4-testng</artifactId>
-  <version>1.0</version>
-  <name>selenium4-testng</name>
-  <description>Latest Selenium with TestNg</description>
-
-  <packaging>pom</packaging>
-
-  <parent>
     <groupId>org.testingchief</groupId>
-    <artifactId>selenium-framework</artifactId>
-    <version>1.0.0</version>
-  </parent>
+    <artifactId>selenium4-testng</artifactId>
+    <version>1.0</version>
+    <name>selenium4-testng</name>
+    <description>Latest Selenium with TestNg</description>
+
+    <packaging>pom</packaging>
+
+    <parent>
+        <groupId>org.testingchief</groupId>
+        <artifactId>selenium-framework</artifactId>
+        <version>1.0.0</version>
+    </parent>
+
+    <properties>
+        <selenium.version>LATEST</selenium.version>
+        <testng.version>LATEST</testng.version>
+        <cucumber.version>LATEST</cucumber.version>
+    </properties>
+
+    <dependencies>
+      <dependency>
+        <groupId>org.seleniumhq.selenium</groupId>
+        <artifactId>selenium-java</artifactId>
+        <version>${selenium.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.testng</groupId>
+        <artifactId>testng</artifactId>
+        <version>${testng.version}</version>
+        <scope>test</scope>
+      </dependency>
+    </dependencies>
 
 </project>
